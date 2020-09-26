@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>"Nerd's" Магазин готовых шаблонов</title>
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav">
       <a href="#">
         <img src="img/header/nerds-logo.svg" alt="Логотип Нёрдс" width="159" height="65">
       </a>
@@ -36,16 +39,44 @@
   </header>
   <main>
     <h1 class="visually-hidden">Магазин готовых шаблонов главная страница</h1>
-    <section>
-      <p>
+    <section class="ad-block">
+      <ul>
+        <li>
+      <p class="caption">
           Долго, дорого, скурпулезно.
       </p>
       <p>
         Математически выверенный дизайн
         для вашего сайта или мобильного приложения.
       </p>
-      <img src="img/index/nerds-index-slide3%201.png" alt="Картинка заставка" width="760" height="431">
-      <a href="#">Узнать больше</a>
+      <img src="img/index/nerds-index-slide1%201.png" alt="Картинка заставка" width="760" height="431">
+      <a href="#" class="button more coral">Узнать больше</a>
+        </li>
+        <li class="visually-hidden">
+          <p class="caption">
+            Любим математику
+            как никто другой
+          </p>
+          <p>
+            Никакого креатива, только математические формулы
+            для расчета идеальных пропорций
+          </p>
+          <img src="img/index/nerds-index-slide2%201.png" alt="Картинка заставка" width="760" height="431">
+          <a href="#" class="button more coral">Узнать больше</a>
+        </li>
+        <li class="visually-hidden">
+          <p class="caption">
+            Только ночь,
+            только хардкор
+          </p>
+          <p>
+            Работать днем, как все? Мы против этого.
+            Ближе к полуночи работа только начинается.
+          </p>
+          <img src="img/index/nerds-index-slide3%201.png" alt="Картинка заставка" width="760" height="431">
+          <a href="#" class="button more coral">Узнать больше</a>
+        </li>
+      </ul>
       <ul>
         <li>
           <button type="button" class="slider-button-active" aria-label="Первый слайд картинки" title="Первый слайд картинки">
@@ -69,43 +100,43 @@
       <ul>
         <li>
           <img src="img/index/illustration-1%201.jpg" alt="Картинка веб-сайта" width="300" height="146">
-          <h3>Веб-сайты</h3>
+          <h3 class="subtitle">Веб-сайты</h3>
           <p>
             Мир никогда не будет прежним
             после того как мир увидит ваш сайт!
           </p>
-          <a href="#">Заказать</a>
+          <a href="#" class="button web coral">Заказать</a>
         </li>
         <li>
           <img src="img/index/illustration-2%201.jpg" alt="Картинка приложения" width="300" height="146">
-          <h3>Приложения</h3>
+          <h3 class="subtitle">Приложения</h3>
           <p>
             Покорите топ-10 приложений
             в AppStore и GooglePlay
           </p>
-          <a href="#">Заказать</a>
+          <a href="#" class="button green">Заказать</a>
         </li>
         <li>
           <img src="img/index/illustration-3%201.jpg" alt="Картинка презентации" width="300" height="146">
-          <h3>Презентации</h3>
+          <h3 class="subtitle-1">Презентации</h3>
           <p>
             Вы даже не представляете
             на сколько вы изумительны!
           </p>
-          <a href="#">Заказать</a>
+          <a href="#" class="button yellow">Заказать</a>
         </li>
       </ul>
     </section>
     <section>
       <section>
-        <h2>
+        <h2 class="subject">
           Мы маленькая - но гордая
           дизайн-студия из Краснодара.
         </h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.
         </p>
-        <h3>Выполняем заказы на разработку:</h3>
+        <h3 class="subtitle-2">Выполняем заказы на разработку:</h3>
         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
@@ -115,24 +146,24 @@
       <section>
         <h2 class="visually-hidden">Наши приемущества</h2>
         <img src="img/index/nerds-illustration%201.png" alt="Картинка приемуществ" width="360" height="208">
-        <p>с 2004 года любим точность во всем:</p>
+        <p class="subtitle-2">с 2004 года любим точность во всем:</p>
         <ul>
           <li>
-            <h3>146%</h3>
+            <h3 class="slogan">146<b class="percent">%</b></h3>
             <p>
               Уровень
               самоотдачи
             </p>
           </li>
           <li>
-            <h3>100%</h3>
+            <h3 class="slogan">100<b class="percent">%</b></h3>
             <p>
               Соблюдение
               сроков
             </p>
           </li>
           <li>
-            <h3>50%</h3>
+            <h3 class="slogan">50<b class="percent">%</b></h3>
             <p>
               Минимальная
               предоплата
@@ -146,22 +177,22 @@
       <ul>
         <li>
           <a href="#">
-            <img src="img/index/Group%205.png" alt="Академия" width="199" height="67">
+            <img class="clients" src="img/index/Group%205.png" alt="Академия" width="199" height="67">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/index/logo-2%201.png" alt="Барбершоп" width="199" height="67">
+            <img class="clients"  src="img/index/logo-2%201.png" alt="Барбершоп" width="199" height="67">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/index/logo-3%201.png" alt="Пинк" width="199" height="67">
+            <img class="clients"  src="img/index/logo-3%201.png" alt="Пинк" width="199" height="67">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/index/logo-4%201.png" alt="Мишка" width="199" height="67">
+            <img class="clients"  src="img/index/logo-4%201.png" alt="Мишка" width="199" height="67">
           </a>
         </li>
       </ul>
@@ -174,57 +205,57 @@
       <img src="img/footer/map%201.png" alt="Карта" width="1440" height="460">
       </section>
       <section>
-        <h3>Nerds design studio</h3>
-        <p>
+        <h3 class="subtitle-3">Nerds design studio</h3>
+        <p class="text-contact">
           191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8
-        </p>
+        </p class="text-contact">
         тел.<a href="tel:+78122757575" aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
         <p>
-          <a href="#">Напишите нам</a>
+          <a href="#" class="button coral">Напишите нам</a>
         </p>
       </section>
     </section>
     <section>
       <ul>
         <li>
-          <a href="#">
-            <img src="img/footer/vk-icon.svg" alt="Вконтакте" width="26" height="15"/>
+          <a class="social" href="#">
+            <img class="logo" src="img/footer/vk-icon.svg" alt="Вконтакте" width="26" height="15"/>
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/footer/fb-icon.svg" alt="Фейсбук" width="12" height="22"/>
+          <a class="social" href="#">
+            <img class="logo" src="img/footer/fb-icon.svg" alt="Фейсбук" width="12" height="22"/>
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/footer/insta-icon.svg" alt="Инстаграм" width="21" height="21"/>
+          <a class="social" href="#">
+            <img class="logo" src="img/footer/insta-icon.svg" alt="Инстаграм" width="21" height="21"/>
           </a>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Давайте дружить, это выгодно!</h2>
+      <h2 class="subtitle-3">Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей</p>
     </section>
   </footer>
   <form action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
-      <legend>Напишите нам</legend>
-      <label>
+      <legend class="popup-subtitle">Напишите нам</legend>
+      <label class="input-subtitle" >
         Ваше имя
-        <input type="text" name="name" placeholder="Имя Фамилия">
+        <input class="input-text" type="text" name="name" placeholder="Имя Фамилия">
       </label>
-      <label>
+      <label class="input-subtitle" >
         Ваш e-mail:
-        <input type="email" name="e-mail" placeholder="email@example.com">
+        <input  class="input-text" type="email" name="e-mail" placeholder="email@example.com">
       </label><br>
-      <label>
+      <label class="input-subtitle" >
         Текст письма:
-        <textarea name="letter" placeholder="В свободной форме"></textarea>
+        <textarea class="input-text" name="letter" placeholder="В свободной форме"></textarea>
       </label>
-      <button type="submit">Отправить</button>
+      <button class="button coral" type="submit">Отправить</button>
     </fieldset>
   </form>
 </body>
