@@ -9,25 +9,25 @@
 </head>
 <body>
 <header>
-  <nav class="nav">
+  <nav class="header-nav">
     <a href="index.html">
       <img src="img/header/nerds-logo.svg" alt="Логотип Нёрдс" width="159" height="65">
     </a>
-    <ul>
+    <ul class="reset-list">
       <li>
-        <a href="index.html">Студия</a>
+        <a class="nav-link" href="index.html">Студия</a>
       </li>
       <li>
-        <a href="#">Клиенты</a>
+        <a class="nav-link" href="#">Клиенты</a>
       </li>
       <li>
-        <a href="#">Магазин</a>
+        <a class="nav-link nav-link--active" href="#">Магазин</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a class="nav-link" href="#">Контакты</a>
       </li>
     </ul>
-    <ul>
+    <ul class="reset-list">
       <li>
         <a href="#">
           <img src="img/header/cart-icon.svg" width="15" height="15" alt="Значек корзины">
@@ -38,27 +38,27 @@
   </nav>
 </header>
 <main>
-  <h1 class="caption" >Магазин готовых шаблонов</h1>
+  <h1 class="promo-subtitle" >Магазин готовых шаблонов</h1>
   <section>
     <section>
-      <h2 class="catalog-subtitle">Сортировать</h2>
-      <ul class="sort-title">
+      <h2 class="sorting-subtitle">Сортировать</h2>
+      <ul class="reset-list">
         <li>
-          <a href="#">По цене</a>
+          <a class="list-item" href="#">По цене</a>
         </li>
         <li>
-          <a href="#">По типу</a>
+          <a class="list-item" href="#">По типу</a>
         </li>
         <li>
-          <a href="#">По названию</a>
+          <a class="list-item" href="#">По названию</a>
         </li>
         <li>
-          <a href="#">
+          <a class="list-item" href="#">
             <img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Убывание">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a class="list-item" href="#">
             <img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="Возрастание">
           </a>
         </li>
@@ -66,9 +66,9 @@
     </section>
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
-        <legend class="catalog-subtitle">Стоимость</legend>
+        <legend class="sorting-subtitle">Стоимость</legend>
         <input type="range" name="slider-price" min="0" max="15000" step="1">
-        <ul class="cost-title">
+        <ul class="reset-list cost-title">
           <li>
             <label>
               От
@@ -84,68 +84,68 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend class="catalog-subtitle">Сетка</legend>
-        <ul class="grid-title">
+        <legend class="sorting-subtitle">Сетка</legend>
+        <ul class="reset-list grid-title">
           <li>
-            <label>
-              <input type="radio" name="grid" value="Adaptive" checked>
+            <input class="grid-input-radio" id="adaptive-radio-input"  type="radio" name="grid" value="Adaptive" checked>
+            <label class="grid-label" for="adaptive-radio-input">
               Адаптивная
             </label>
           </li>
           <li>
-            <label>
-              <input type="radio" name="grid" value="Fixed">
+            <input class="grid-input-radio"  id="fixed-radio-input" type="radio" name="grid" value="Fixed" disabled>
+            <label class="grid-label" for="fixed-radio-input">
               Фиксированная
             </label>
           </li>
           <li>
-            <label>
-              <input type="radio" name="grid" value="Rubber">
+            <input class="grid-input-radio" id="rubber-radio-input"  type="radio" name="grid" value="Rubber" disabled>
+            <label class="grid-label" for="rubber-radio-input">
               Резиновая
             </label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend class="catalog-subtitle">Особенности</legend>
-        <ul class="features-title">
+        <legend class="sorting-subtitle">Особенности</legend>
+        <ul class="reset-list features-title">
           <li>
-            <label>
-              <input type="checkbox" name="slider" checked>
+            <input class="features-input-checkbox" id="slider-checkbox-input"  type="checkbox" name="slider" checked>
+            <label class="features-label" for="slider-checkbox-input" >
               Слайдер
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="advantage-block">
+            <input class="features-input-checkbox" id="advantage-block-checkbox-input" type="checkbox" name="advantage-block" disabled>
+            <label class="features-label" for="advantage-block-checkbox-input">
               Блок приеемуществ
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="news" checked>
+            <input class="features-input-checkbox" id="news-checkbox-input"  type="checkbox" name="news" checked>
+            <label class="features-label" for="news-checkbox-input">
               Новости
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="gallery">
+            <input class="features-input-checkbox" id="gallery-checkbox-input" type="checkbox" name="gallery" checked>
+            <label class="features-label" for="gallery-checkbox-input">
               Галерея
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="basket">
+            <input class="features-input-checkbox" id="basket-checkbox-input" type="checkbox" name="basket" disabled>
+            <label class="features-label" for="basket-checkbox-input">
               Корзина
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="button gray" type="submit">Показать</button>
+      <button class="button button--gray" type="submit">Показать</button>
     </form>
     <section>
       <h2 class="visually-hidden">Карточки товаров</h2>
-      <ul>
+      <ul class="reset-list">
         <li>
           <article>
             <img src="img/catalog/browser.svg" alt="Черная плашка с тремя кружочками" width="360" height="40">
@@ -154,11 +154,11 @@
               <a href="#" aria-label="Ссылка на покупку сайта Седона за 9900₽">
                 <h3 class="catalog-subtitle">Sedona</h3>
               </a>
-              <p class="card-title">
+              <p class="card-description">
                 Информационный сайт
                 для туристов
               </p>
-              <p class="button coral">9 900₽</p>
+              <p class="button cost">9 900₽</p>
             </section>
           </article>
         </li>
@@ -170,11 +170,11 @@
               <a href="#" aria-label="Ссылка на покупку сайта Пинк за 9900₽">
                 <h3 class="catalog-subtitle">Pink up</h3>
               </a>
-              <p class="card-title">
+              <p class="card-description">
                 Продуктовый лендинг
                 для IOS и Android
               </p>
-              <p class="button coral">9 900₽</p>
+              <p class="button cost">9 900₽</p>
             </section>
           </article>
         </li>
@@ -187,11 +187,11 @@
               <a href="#" aria-label="Ссылка на покупку сайта Бородинский за 9900₽">
                 <h3 class="catalog-subtitle">Borodinski</h3>
               </a>
-              <p class="card-title">
+              <p class="card-description">
                 Сайт салона красоты.
                 Для мужчин,да!
               </p>
-              <p class="button coral">9 900₽</p>
+              <p class="button cost">9 900₽</p>
             </section>
           </article>
         </li>
@@ -203,11 +203,11 @@
               <a href="#" aria-label="Ссылка на покупку сайта Мишка за 9900₽">
                 <h3 class="catalog-subtitle">Mishka</h3>
               </a>
-              <p class="card-title">
+              <p class="card-description">
                 Интернет-магазин
                 вязаных игрушек
               </p>
-              <p class="button coral">9 900₽</p>
+              <p class="button cost">9 900₽</p>
             </section>
           </article>
         </li>
@@ -219,11 +219,11 @@
               <a href="#" aria-label="Ссылка на покупку сайта А плюс за 9900₽">
                 <h3 class="catalog-subtitle">A plus</h3>
               </a>
-              <p class="card-title">
+              <p class="card-description">
                 Лендинг курсов повышения
                 квалификации
               </p>
-              <p class="button coral">9 900₽</p>
+              <p class="button cost">9 900₽</p>
             </section>
           </article>
         </li>
@@ -235,11 +235,11 @@
               <a href="#" aria-label="Ссылка на покупку сайта Кваст за 9900₽">
                 <h3 class="catalog-subtitle">Kvast</h3>
               </a>
-              <p class="card-title">
+              <p class="card-description">
                 Промо-сайт производителя
                 крафтового кваса
               </p>
-              <p class="button coral">9 900₽</p>
+              <p class="button cost">9 900₽</p>
             </section>
           </article>
         </li>
@@ -247,18 +247,18 @@
     </section>
     <section>
       <h2>Страницы</h2>
-      <ul class="button page gray">
+      <ul class="reset-list">
         <li>
-          <a>1</a>
+          <a class="button button--gray">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a class="button button--gray" href="#">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a class="button button--gray" href="#">3</a>
         </li>
         <li>
-          <a href="#">Следующая</a>
+          <a class="button button--gray" href="#">Следующая</a>
         </li>
       </ul>
     </section>
@@ -270,53 +270,53 @@
       <img src="img/footer/map%201.png" alt="Карта" width="1440" height="460">
     </section>
     <section>
-      <h3 class="subtitle-3">Nerds design studio</h3>
-      <p class="text-contact">
+      <h3 class="subtitle-adress">Nerds design studio</h3>
+      <address class="text-contact">
         191186, Санкт-Петербург,
         ул. Б. Конюшенная, д. 19/8
-      </p class="text-contact">
-      тел.<a href="tel:+78122757575" aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
+      </address>
+      тел.<a class="text-contact" href="tel:+78122757575" aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
       <p>
         <a href="#" class="button">Напишите нам</a>
       </p>
     </section>
   </section>
   <section>
-    <ul>
+    <ul class="reset-list">
       <li>
-        <a href="#">
-          <img src="img/footer/vk-icon.svg" alt="Вконтакте" width="26" height="15"/>
+        <a class="social" href="#">
+          <img class="logo" src="img/footer/vk-icon.svg" alt="Вконтакте" width="26" height="15"/>
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/footer/fb-icon.svg" alt="Фейсбук" width="12" height="22"/>
+        <a class="social" href="#">
+          <img class="logo" src="img/footer/fb-icon.svg" alt="Фейсбук" width="12" height="22"/>
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/footer/insta-icon.svg" alt="Инстаграм" width="21" height="21"/>
+        <a class="social" href="#">
+          <img class="logo" src="img/footer/insta-icon.svg" alt="Инстаграм" width="21" height="21"/>
         </a>
       </li>
     </ul>
   </section>
   <section>
-    <h2 class="subtitle-3">Давайте дружить, это выгодно!</h2>
+    <h2 class="subtitle-footer">Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей</p>
   </section>
 </footer>
 <form action="https://echo.htmlacademy.ru" method="post">
   <fieldset>
-    <legend class="popup-subtitle">Напишите нам</legend>
-    <label class="input-subtitle" >
+    <legend class="form-legend">Напишите нам</legend>
+    <label class="input-label">
       Ваше имя
       <input class="input-text" type="text" name="name" placeholder="Имя Фамилия">
     </label>
-    <label class="input-subtitle" >
+    <label class="input-subtitle">
       Ваш e-mail:
-      <input  class="input-text" type="email" name="e-mail" placeholder="email@example.com">
+      <input class="input-text" type="email" name="e-mail" placeholder="email@example.com">
     </label><br>
-    <label class="input-subtitle" >
+    <label class="input-subtitle">
       Текст письма:
       <textarea class="input-text" name="letter" placeholder="В свободной форме"></textarea>
     </label>

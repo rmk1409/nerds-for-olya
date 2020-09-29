@@ -1,35 +1,30 @@
-/* Variables */
 
 :root {
-  --basic-gray: #EEEEEE;
-  --basic-gray-hover: #DFDFDF;
-  --basic-gray-active: #D5D5D5;
+  --gray: #EEEEEE;
+  --gray-hover: #DFDFDF;
+  --gray-active: #D5D5D5;
   --dark-gray: #666666;
-  --basic-black: #000000;
-  --basic-coral: #FB565A;
-  --basic-coral-hover: #E74246;
-  --basic-coral-active: #D7373B;
-  --basic-green: #00CA74;
-  --basic-green-hover: #00BC6C;
-  --basic-green-active: #00AA62;
-  --basic-yellow: #EFC849;
-  --basic-yellow-hover: #EAB534;
-  --basic-yellow-active: #E5A722;
-  --basic-white: #FFFFFF;
+  --black: #000000;
+  --coral: #FB565A;
+  --coral-hover: #E74246;
+  --coral-active: #D7373B;
+  --green: #00CA74;
+  --green-hover: #00BC6C;
+  --green-active: #00AA62;
+  --yellow: #EFC849;
+  --yellow-hover: #EAB534;
+  --yellow-active: #E5A722;
+  --white: #FFFFFF;
 }
 
-/* Global */
-
 body {
-  min-width: 1180px;
   margin: 0;
   padding: 0;
+  min-width: 1180px;
   font-family: "PT Sans Narrow", Roboto, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: var(--basic-black);
-  text-transform: none;
+  color: var(--black);
 }
 
 img {
@@ -37,47 +32,97 @@ img {
   height: auto;
 }
 
-/* Main navigation */
-
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  height: 1px;
   overflow: hidden;
-  position: absolute;
   white-space: nowrap;
-  width: 1px;
 }
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
-main .ad-block,
-.nav,
-.caption {
-  background-color: var(--basic-gray);
+main .promo-block,
+.header-nav,
+.promo-subtitle {
+  background-color: var(--gray);
 }
 
-.nav {
+.reset-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header-nav {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--black);
 }
 
-.caption {
+.nav-link--active {
+  border-bottom: 2px solid var(--coral);
+}
+
+.header-nav a:hover {
+  color: var(--coral);
+}
+
+.header-nav a:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.promo-subtitle {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
+.promo-slider-1 {
+  background: no-repeat;
+  background-image: url("../img/index/nerds-index-slide1 .png");
+}
+
+.promo-slider-2 {
+  background: no-repeat;
+  background-image: url("../img/index/nerds-index-slide2 .png");
+}
+
+.promo-slider-3 {
+  background: no-repeat;
+  background-image: url("../img/index/nerds-index-slide3 .png");
+}
+
+.promo-slider-2,
+.promo-slider-3 {
+  display: none;
+}
+
 .button {
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-white);
-  background-color: var(--basic-coral);
+  font-weight: 500;
+  color: var(--white);
   text-transform: uppercase;
+  background-color: var(--coral);
 }
+
+.button:hover {
+  background-color: var(--coral-hover);
+}
+
+.button:active {
+  background-color: var(--coral-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .subtitle-1 {
   text-transform: uppercase;
@@ -85,28 +130,18 @@ main .ad-block,
   line-height: 24px;
 }
 
-.subject {
+.slogan-abaut-us-1 {
   font-size: 45px;
   line-height: 45px;
 }
 
-.subtitle-2 {
+.slogan-abaut-us-2 {
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.subtitle-2 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-ul {
-  list-style: none;
-}
-
-.slogan {
+.figures {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
@@ -118,24 +153,39 @@ ul {
   line-height: 40px;
 }
 
-.text-contact {
+.description-of-figure {
   font-size: 16px;
   line-height: 18px;
 }
 
-.subtitle-3 {
+.text-contact {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  font-style: normal;
+  color: var(--dark-gray);
+}
+
+.subtitle-adress {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.subtitle-footer {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
 }
 
-.popup-subtitle {
+.form-legend {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
 }
 
-.input-subtitle {
+.input-label {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -145,32 +195,51 @@ ul {
   font-size: 16px;
   line-height: 18px;
 }
+.sorting-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.list-item {
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.list-item:hover {
+  opacity: 0.6;
+}
+
+.list-item:active {
+  opacity: 1;
+}
+
+.grid-item {
+  font-size: 16px;
+  line-height: 19px;
+}
 
 .catalog-subtitle {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--black);
 }
 
 .catalog-subtitle:hover {
-  color: var(--basic-coral);
+  color: var(--coral);
 }
 
 .catalog-subtitle:active {
-  color: var(--basic-gray-active);
+  color: var(--gray-active);
 }
 
 .card {
-  background-color: var(--basic-gray);
+  background-color: var(--gray);
 }
 
-.sort-title {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
 
 .cost-title {
   font-size: 16px;
@@ -183,124 +252,101 @@ ul {
   line-height: 19px;
 }
 
+.grid-input-radio:disabled+ .grid-label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features-input-checkbox:disabled+ .features-label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .features-title {
   font-size: 16px;
   line-height: 19px;
 }
 
-.green {
-  color: var(--basic-white);
-  background-color: var(--basic-green);
+.features-item:disabled {
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.yellow {
-  color: var(--basic-white);
-  background-color: var(--basic-yellow);
+.cost:active {
+  color: rgba(255, 255, 255, 1);
 }
 
-.gray {
-  color: var(--basic-black);
-  background-color: var(--basic-gray);
+.button--green {
+  background-color: var(--green);
 }
 
-.card-title {
+.button--yellow {
+  background-color: var(--yellow);
+}
+
+.button--gray {
+  color: var(--black);
+  background-color: var(--gray);
+}
+
+.button--gray:hover {
+  color: var(--black);
+  background-color: var(--gray-hover);
+}
+.button--gray:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: var(--gray-hover);
+}
+
+.card-description {
   font-size: 16px;
   line-height: 18px;
   color: var(--dark-gray);
 }
 
-.nav a:link,
-.nav a:visited {
-  color: var(--basic-black);
-}
-
-.nav a:hover {
-  color: var(--basic-coral);
-}
-
-.nav a:active {
-  color: var(--basic-black);
-  opacity: 0.3;
-}
-
-.clients {
+.client {
   opacity: 0.2;
 }
 
-.clients:hover {
+.client:hover {
   opacity: 1;
 }
 
-.clients:active {
+.client:active {
   opacity: 0.1;
 }
 .social {
-  background-color: var(--basic-gray);
-  BORDER-RADIUS: 50%;
-  WIDTH: 81px;
-  height: 81px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
-.social:hover {
-  background-color: var(--basic-coral);
-  BORDER-RADIUS: 50%;
-  WIDTH: 81px;
-  height: 81px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
-.social:active {
-  background-color: var(--basic-coral-active);
-  border-radius: 50%;
   width: 81px;
   height: 81px;
   display: grid;
   align-items: center;
   justify-content: center;
+  background-color: var(--gray);
+  border-radius: 50%;
 }
 
-.logo:active{
+.social:hover {
+  background-color: var(--coral);
+}
+
+.social:active {
+  background-color: var(--coral-active);
+}
+
+.social:active .logo{
   opacity: 0.3;
 }
 
-.more:hover,
-.web:hover,
-.coral:hover{
-  background-color: var(--basic-coral-hover);
+.button--yellow:hover{
+  background-color: var(--yellow-hover);
 }
 
-.more:active,
-.web:active,
-.coral:active {
-  background-color: var(--basic-coral-active);
-  color: #EEEEEE 0.3;
+.button--yellow:active {
+  background-color: var(--yellow-active);
 }
 
-.yellow:hover{
-  background-color: var(--basic-yellow-hover);
+.button--green:hover {
+  background-color: var(--green-hover);
 }
 
-.yellow:active {
-  background-color: var(--basic-yellow-active);
+.button--green:active{
+  background-color: var(--green-active);
 }
 
-.green:hover {
-  background-color: var(--basic-green-hover);
-}
-
-.green:active{
-  background-color: var(--basic-green-active);
-}
-
-.gray:hover {
-  background-color: var(--basic-gray-hover);
-}
-
-.gray:active {
-  background-color: var(--basic-gray-active);
-}
