@@ -1,0 +1,386 @@
+
+:root {
+  --gray: #EEEEEE;
+  --gray-hover: #DFDFDF;
+  --gray-active: #D5D5D5;
+  --dark-gray: #666666;
+  --black: #000000;
+  --coral: #FB565A;
+  --coral-hover: #E74246;
+  --coral-active: #D7373B;
+  --green: #00CA74;
+  --green-hover: #00BC6C;
+  --green-active: #00AA62;
+  --yellow: #EFC849;
+  --yellow-hover: #EAB534;
+  --yellow-active: #E5A722;
+  --white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1180px;
+  font-family: "PT Sans Narrow", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.promo-block,
+.header-nav,
+.promo-subtitle {
+  background-color: var(--gray);
+}
+
+.reset-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header-nav {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.nav-link--active {
+  border-bottom: 2px solid var(--coral);
+}
+
+.header-nav a:hover {
+  color: var(--coral);
+}
+
+.header-nav a:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.promo-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.promo-slider-1 {
+  background: url("../img/index/nerds-index-slide1.png") no-repeat;;
+}
+
+.promo-slider-2 {
+  background: url("../img/index/nerds-index-slide2.png") no-repeat;
+}
+
+.promo-slider-3 {
+  background: url("../img/index/nerds-index-slide3.png") no-repeat;
+}
+
+.promo-slider-2,
+.promo-slider-3 {
+  display: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--coral);
+}
+
+.button:hover {
+  background-color: var(--coral-hover);
+}
+
+.button:active {
+  background-color: var(--coral-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.category-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slogan-about-us {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.title-about-us {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.statistics {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.percent {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.statistics-description {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.text-contact {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  font-style: normal;
+  color: var(--dark-gray);
+}
+
+.title-adress {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.title-footer {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.form-legend {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.input-label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.input-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.sorting-subtitle,
+.form-legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sorting-link {
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sorting-link:hover {
+  opacity: 0.6;
+}
+
+.sorting-link:active {
+  opacity: 1;
+}
+
+.grid-item {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.catalog-subtitle:hover {
+  color: var(--coral);
+}
+
+.catalog-subtitle:active {
+  color: var(--gray-active);
+}
+
+.card {
+  background-color: var(--gray);
+}
+
+.card-info {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-gray);
+  background-color: var(--gray);
+}
+
+.cost-list {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* Chrome, Safari, Edge, Opera */
+.number-price::-webkit-outer-spin-button,
+.number-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.number-price[type=number] {
+  -moz-appearance: textfield;
+}
+
+.grid-title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.grid-input-radio:disabled + .grid-label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features-input-checkbox:disabled + .features-label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features-input-list {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.features-item:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button--cost:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.button--green {
+  background-color: var(--green);
+}
+
+.button--yellow {
+  background-color: var(--yellow);
+}
+
+.button--gray {
+  color: var(--black);
+  background-color: var(--gray);
+}
+
+.button--gray:hover {
+  color: var(--black);
+  background-color: var(--gray-hover);
+}
+
+.button--gray:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: var(--gray-hover);
+}
+
+.button-pagination {
+  border-radius: 3px;
+}
+
+.button-pagination:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+  border: 0px solid var(--gray);
+}
+
+.button-pagination:hover {
+  border: 0px solid var(--gray);
+}
+
+.button-pagination--active {
+  background-color: var(--white);
+  border: 3px solid var(--gray)
+}
+
+.client-link {
+  opacity: 0.2;
+}
+
+.client-link:hover {
+  opacity: 1;
+}
+
+.client-link:active {
+  opacity: 0.1;
+}
+
+.social-link {
+  width: 81px;
+  height: 81px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  background-color: var(--coral);
+}
+
+.social-link:active {
+  background-color: var(--coral-active);
+}
+
+.social-link:active .social-img {
+  opacity: 0.3;
+}
+
+.button--yellow:hover {
+  background-color: var(--yellow-hover);
+}
+
+.button--yellow:active {
+  background-color: var(--yellow-active);
+}
+
+.button--green:hover {
+  background-color: var(--green-hover);
+}
+
+.button--green:active {
+  background-color: var(--green-active);
+}
+
+.button-border--reset {
+  border: none;
+}
+
