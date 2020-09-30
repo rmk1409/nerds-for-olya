@@ -24,7 +24,6 @@ body {
   font-family: "PT Sans Narrow", Roboto, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: var(--black);
 }
 
 img {
@@ -47,7 +46,7 @@ a {
   color: var(--black);
 }
 
-main .promo-block,
+.promo-block,
 .header-nav,
 .promo-subtitle {
   background-color: var(--gray);
@@ -79,25 +78,28 @@ main .promo-block,
   opacity: 0.3;
 }
 
-.promo-subtitle {
+.promo-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
 .promo-slider-1 {
-  background: no-repeat;
-  background-image: url("../img/index/nerds-index-slide1 .png");
+  background-image: url("../img/index/nerds-index-slide1.png");
 }
 
 .promo-slider-2 {
-  background: no-repeat;
-  background-image: url("../img/index/nerds-index-slide2 .png");
+  background-image: url("../img/index/nerds-index-slide2.png");
 }
 
 .promo-slider-3 {
+  background-image: url("../img/index/nerds-index-slide3.png");
+}
+
+.promo-slider-1,
+.promo-slider-2,
+.promo-slider-3 {
   background: no-repeat;
-  background-image: url("../img/index/nerds-index-slide3 .png");
 }
 
 .promo-slider-2,
@@ -124,24 +126,24 @@ main .promo-block,
 }
 
 
-.subtitle-1 {
+.category-title {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
 }
 
-.slogan-abaut-us-1 {
+.slogan-about-us {
   font-size: 45px;
   line-height: 45px;
 }
 
-.slogan-abaut-us-2 {
+.title-abaut-us {
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.figures {
+.statistics{
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
@@ -153,7 +155,7 @@ main .promo-block,
   line-height: 40px;
 }
 
-.description-of-figure {
+.statistics-description {
   font-size: 16px;
   line-height: 18px;
 }
@@ -166,14 +168,14 @@ main .promo-block,
   color: var(--dark-gray);
 }
 
-.subtitle-adress {
+.title-adress {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.subtitle-footer {
+.title-footer {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -195,23 +197,24 @@ main .promo-block,
   font-size: 16px;
   line-height: 18px;
 }
-.sorting-subtitle {
+.sorting-subtitle,
+.form-legend {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.list-item {
+.sorting-link {
   text-transform: uppercase;
   opacity: 0.3;
 }
 
-.list-item:hover {
+.sorting-link:hover {
   opacity: 0.6;
 }
 
-.list-item:active {
+.sorting-link:active {
   opacity: 1;
 }
 
@@ -240,12 +243,26 @@ main .promo-block,
   background-color: var(--gray);
 }
 
+.card-info {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-gray);
+  background-color: var(--gray);
+}
 
-.cost-title {
+.cost-list {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
 }
+
+.number-price::-webkit-outer-spin-button,
+.number-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
 
 .grid-title {
   font-size: 16px;
@@ -260,7 +277,7 @@ main .promo-block,
   color: rgba(0, 0, 0, 0.3);
 }
 
-.features-title {
+.features-input-list {
   font-size: 16px;
   line-height: 19px;
 }
@@ -269,7 +286,7 @@ main .promo-block,
   color: rgba(0, 0, 0, 0.3);
 }
 
-.cost:active {
+.button--cost:active {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -295,24 +312,37 @@ main .promo-block,
   background-color: var(--gray-hover);
 }
 
-.card-description {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--dark-gray);
+.button-pagination--active {
+  background-color: var(--white);
+  border: 3px solid var(--gray)
 }
 
-.client {
+.button-pagination {
+  border-radius: 3px;
+}
+
+.button-pagination:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+  border: 0px solid var(--gray);
+}
+
+.button-pagination:hover {
+  border: 0px solid var(--gray);
+}
+
+.client-link {
   opacity: 0.2;
 }
 
-.client:hover {
+.client-link:hover {
   opacity: 1;
 }
 
-.client:active {
+.client-link:active {
   opacity: 0.1;
 }
-.social {
+.social-link {
   width: 81px;
   height: 81px;
   display: grid;
@@ -322,15 +352,15 @@ main .promo-block,
   border-radius: 50%;
 }
 
-.social:hover {
+.social-link:hover {
   background-color: var(--coral);
 }
 
-.social:active {
+.social-link:active {
   background-color: var(--coral-active);
 }
 
-.social:active .logo{
+.social-link:active .social-img {
   opacity: 0.3;
 }
 
@@ -348,5 +378,8 @@ main .promo-block,
 
 .button--green:active{
   background-color: var(--green-active);
+}
+.button-border-reset {
+  border: none;
 }
 
