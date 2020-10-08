@@ -31,11 +31,6 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 70px;
-}
 
 .page {
   height: 100%;
@@ -70,7 +65,7 @@ a {
 
 .promo-block,
 .header-nav,
-.promo-title {
+.promo-title-gray {
   background-color: var(--gray);
 }
 
@@ -81,7 +76,6 @@ a {
 }
 
 .header-nav {
-  margin-bottom: 50px;
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
@@ -90,19 +84,22 @@ a {
 
 .container {
   max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 0 0;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .header-nav .container {
-  margin-top: 49px;
   display: flex;
+  padding-top: 49px;
+  padding-bottom: 78px;
   justify-content: space-between;
   align-items: center;
 }
 
 .promo-block {
   margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .promo {
@@ -111,12 +108,12 @@ a {
 
 .slider-buttons {
   display: flex;
+  gap: 17px;
 }
 
 .site-navigation {
   min-width: 438px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -137,9 +134,14 @@ a {
   opacity: 0.3;
 }
 
+.promo-title-gray {
+  margin-bottom: 55px;
+}
+
 .promo-title {
-  box-sizing: border-box;
+  max-width: 745px;
   margin: auto;
+  padding-bottom: 107px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -165,7 +167,7 @@ a {
 
 .category-block {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(3, 300px);
   gap: 100px;
   margin-bottom: 156px;
 }
@@ -173,7 +175,6 @@ a {
 .info-about-us {
   display: grid;
   grid-template-columns: 652px 360px;
-  grid-template-rows: 395px;
   column-gap: 142px;
   margin-bottom: 128px;
 }
@@ -186,44 +187,71 @@ a {
 
 .client-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 128px;
 }
 
-.category {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
 
 .social-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 261px 1fr;
+  gap: 139px;
+  align-items: center;
 }
 
 .social-links-group {
-  display: flex ;
+  display: flex;
   gap: 9px;
 }
 
 .grid-catalog {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 140px;
+  align-content: center;
+  grid-template-columns: auto 360px 360px;
+  grid-template-rows: 50px auto 50px;
+  column-gap: 40px;
   margin-bottom: 36px;
 }
 
-.grid-card {
+.sort {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+
+.sorting-links {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  gap: 25px;
+}
+
+.grid-section {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid-cards {
+  grid-column: 2/-1;
+  grid-row-start: 2;
+  flex-wrap gap: 30px;
+}
+
+.card-catalog {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 40px;
-  row-gap: 30px;
+  gap: 40px;
 }
 
 .pagination {
-  box-sizing: border-box;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
   display: flex;
-  justify-content: center;
   gap: 11px;
-margin-bottom: 66px;
+  margin-bottom: 66px;
 }
 
 .button {
@@ -258,12 +286,16 @@ margin-bottom: 66px;
 }
 
 .title-about-us {
+  font-size: 16px;
+  line-height: 24px;
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .statistics {
+  margin-bottom: 0px;
+  margin-top: 0px;
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
@@ -296,15 +328,50 @@ margin-bottom: 66px;
 }
 
 .title-footer {
+  margin-bottom: 0px;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
 }
 
+.form-grid {
+  display: grid;
+  max-width: 761px;
+  max-height: 443px;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 37px;
+}
+
 .form-legend {
+  grid-column-start: 1;
+  grid-row-start: 1;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+}
+
+.form-grid-name {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.form-grid-email {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.form-grid-text {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.form-grid-button {
+  grid-row-start: 4;
+  grid-column-start: 1;
 }
 
 .input-label {
@@ -318,8 +385,7 @@ margin-bottom: 66px;
   line-height: 18px;
 }
 
-.sorting-subtitle,
-.form-legend {
+.sorting-subtitle {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -328,6 +394,8 @@ margin-bottom: 66px;
 
 .sorting-link {
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
   opacity: 0.3;
 }
 
