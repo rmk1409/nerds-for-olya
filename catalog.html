@@ -77,33 +77,35 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="number-price" name="min-price" value="0">
+                    от <input type="number" name="min-price" value="0">
                   </label>
                   <label class="max-price">
-                    до <input type="number-price" name="max-price" value="15000">
+                    до <input type="number" name="max-price" value="15000">
                   </label>
                 </div>
               </div>
             </fieldset>
             <fieldset  class="fieldset-border fieldset-grid">
               <legend class="sorting-subtitle">Сетка</legend>
-              <ul class=" grid-title reset-list">
+              <ul class="grid-title reset-list">
                 <li>
-                  <input checked class="grid-input-radio" id="adaptive-radio-input" name="grid" type="radio"
-                         value="Adaptive">
-                  <label class="grid-label" for="adaptive-radio-input">
+                  <label class="radio">
+                  <input checked class="radio-input" name="grid" type="radio" value="Adaptive">
+                    <span class="radio-button"></span>
                     Адаптивная
                   </label>
                 </li>
                 <li>
-                  <input class="grid-input-radio" id="fixed-radio-input" name="grid" type="radio" value="Fixed">
-                  <label class="grid-label" for="fixed-radio-input">
+                  <label class="radio">
+                  <input disabled class="radio-input" name="grid" type="radio" value="Fixed">
+                    <span class="radio-button"></span>
                     Фиксированная
                   </label>
                 </li>
                 <li>
-                  <input class="grid-input-radio" id="rubber-radio-input" name="grid" type="radio" value="Rubber">
-                  <label class="grid-label" for="rubber-radio-input">
+                  <label class="radio">
+                  <input class="radio-input" name="grid" type="radio" value="Rubber">
+                    <span class="radio-button"></span>
                     Резиновая
                   </label>
                 </li>
@@ -113,35 +115,37 @@
               <legend class="sorting-subtitle">Особенности</legend>
               <ul class=" features-input-list reset-list">
                 <li>
-                  <input checked class="features-input-checkbox" id="slider-checkbox-input" name="slider"
-                         type="checkbox">
-                  <label class="features-label" for="slider-checkbox-input">
+                  <label class="check option">
+                  <input checked class="check_input"  name="slider" type="checkbox">
+                    <span class="check-box"></span>
                     Слайдер
                   </label>
                 </li>
                 <li>
-                  <input class="features-input-checkbox" id="advantage-block-checkbox-input" name="advantage-block"
-                         type="checkbox">
-                  <label class="features-label" for="advantage-block-checkbox-input">
+                  <label class="check option">
+                  <input class="check_input" name="advantage-block" type="checkbox">
+                    <span class="check-box"></span>
                     Блок приеемуществ
                   </label>
                 </li>
                 <li>
-                  <input checked class="features-input-checkbox" id="news-checkbox-input" name="news" type="checkbox">
-                  <label class="features-label" for="news-checkbox-input">
+                  <label class="check option">
+                  <input disabled class="check_input" name="news" type="checkbox">
+                    <span class="check-box"></span>
                     Новости
                   </label>
                 </li>
                 <li>
-                  <input checked class="features-input-checkbox" id="gallery-checkbox-input" name="gallery"
-                         type="checkbox">
-                  <label class="features-label" for="gallery-checkbox-input">
+                  <label class="check option">
+                  <input checked disabled class="check_input" name="gallery" type="checkbox">
+                    <span class="check-box"></span>
                     Галерея
                   </label>
                 </li>
                 <li>
-                  <input class="features-input-checkbox" id="basket-checkbox-input" name="basket" type="checkbox">
-                  <label class="features-label" for="basket-checkbox-input">
+                  <label class="check option">
+                  <input class="check_input" name="basket" type="checkbox">
+                    <span class="check-box"></span>
                     Корзина
                   </label>
                 </li>
