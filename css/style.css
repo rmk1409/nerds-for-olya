@@ -31,10 +31,6 @@ img {
   height: auto;
 }
 
-.map {
-  width: 1440px;
-}
-
 .page {
   height: 100%;
 }
@@ -66,8 +62,8 @@ img {
 }
 
 a {
-  text-decoration: none;
   color: var(--black);
+  text-decoration: none;
 }
 
 .promo-block,
@@ -82,18 +78,39 @@ a {
   list-style: none;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
+.button {
+  display: block;
+  padding: 16px 15px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--coral);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--coral-hover);
+}
+
+.button:active {
+  background-color: var(--coral-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .header-nav {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--black);
-}
-
-.container {
-  box-sizing: border-box;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 140px;
 }
 
 .header-nav .container {
@@ -103,25 +120,50 @@ a {
   padding-top: 48px;
 }
 
+.header-nav a:hover {
+  color: var(--coral);
+}
+
+.header-nav a:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
 .promo-block {
-  margin-bottom: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 82px;
 }
 
 .slider-buttons {
-  position: relative;
+  position: absolute;
+  top: 309px;
+  left: 678px;
+  display: flex;
+  gap: 16px;
 }
 
 .slider-buttons button {
-  position: absolute;
-  gap: 1px;
-  left: 537px;
-  top: -19px;
-  width: 7px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-color: var(--white);
   border-radius: 50%;
   cursor: pointer;
+  border: none;
+}
+
+..slider-button--active {
+  position: relative;
+}
+
+.slider-button--active:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border:2px solid var(--gray-active);
+  border-radius: 50%;
 }
 
 .site-navigation {
@@ -160,6 +202,10 @@ a {
   background-position: 0 0;
 }
 
+.promo-block .container {
+  position: relative;
+}
+
 .nav-link {
   display: block;
   height: 37px;
@@ -168,15 +214,6 @@ a {
 .nav-link--active {
   padding-bottom: 44px;
   border-bottom: 2px solid var(--coral);
-}
-
-.header-nav a:hover {
-  color: var(--coral);
-}
-
-.header-nav a:active {
-  color: var(--black);
-  opacity: 0.3;
 }
 
 .promo-title-gray {
@@ -206,8 +243,7 @@ a {
 
 .promo-paragraph {
   margin-top: 26px;
-  margin-left: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .promo-slider-1 {
@@ -240,16 +276,44 @@ a {
 }
 
 .button--learn-more {
-  padding: 15px 54px;
-  border-radius: 3px;
-  width: 240px;
+  width: 241px;
+  text-align: center;
 }
 
 .category-block {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 100px;
-  margin-bottom: 144px;
+  margin-top: 78px;
+}
+
+.category {
+  position: relative;
+  padding-top: 156px;
+}
+
+.website-img:before {
+  content: "";
+  position: absolute;
+  height: 146px;
+  width: 300px;
+  background-image: url("../img/index/illustration-1.jpg");
+}
+
+.application-img:before {
+  content: "";
+  position: absolute;
+  height: 146px;
+  width: 300px;
+  background-image: url("../img/index/illustration-2.jpg");
+}
+
+.presentation-img:before {
+  content: "";
+  position: absolute;
+  height: 146px;
+  width: 300px;
+  background-image: url("../img/index/illustration-3.jpg");
 }
 
 .paragraph-about-us::before {
@@ -266,7 +330,7 @@ a {
   display: grid;
   grid-template-columns: 652px 360px;
   column-gap: 142px;
-  margin-bottom: 59px;
+  margin-top: 143px;
 }
 
 .info-about-us::before {
@@ -462,24 +526,6 @@ a {
   margin-top: 51px;
 }
 
-.button {
-  display: block;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: var(--white);
-  text-transform: uppercase;
-  background-color: var(--coral);
-}
-
-.button:hover {
-  background-color: var(--coral-hover);
-}
-
-.button:active {
-  background-color: var(--coral-active);
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .button--category {
   display: block;
