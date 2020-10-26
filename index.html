@@ -28,7 +28,7 @@
           <a class="nav-link" href="#">Контакты</a>
         </li>
       </ul>
-      <div class="custom-navigation">
+      <div class="card-navigation">
         <a class="card-link" href="#">Корзина</a>
       </div>
     </div>
@@ -74,9 +74,12 @@
         </li>
       </ul>
       <div class="slider-buttons">
-          <button class="slider-button slider-button--active" type="button" aria-label="Первый слайд картинки" title="Первый слайд картинки"></button>
-          <button class="slider-button" type="button" aria-label="Второй слайд картинки" title="Второй слайд картинки"></button>
-          <button class="slider-button" type="button" aria-label="Третий слайд картинки" title="Третий слайд картинки"></button>
+        <button class="slider-button slider-button--active" type="button" aria-label="Первый слайд картинки"
+                title="Первый слайд картинки"></button>
+        <button class="slider-button" type="button" aria-label="Второй слайд картинки"
+                title="Второй слайд картинки"></button>
+        <button class="slider-button" type="button" aria-label="Третий слайд картинки"
+                title="Третий слайд картинки"></button>
       </div>
     </div>
   </section>
@@ -85,8 +88,7 @@
       <h2 class="visually-hidden">Наши категории</h2>
       <ul class="category-block reset-list">
         <li class="category">
-          <img src="img/index/illustration-1.jpg" alt="Картинка веб-сайта" width="300" height="146">
-          <h3 class="category-title">Веб-сайты</h3>
+          <h3 class="category-title website-img">Веб-сайты</h3>
           <p class="category-paragraph">
             Мир никогда не будет прежним
             после того как увидит ваш сайт!
@@ -94,22 +96,20 @@
           <a class="button button--category" href="#">Заказать</a>
         </li>
         <li class="category">
-          <img src="img/index/illustration-2.jpg" alt="Картинка приложения" width="300" height="146">
-          <h3 class="category-title">Приложения</h3>
+          <h3 class="category-title application-img">Приложения</h3>
           <p class="category-paragraph">
             Покорите топ-10 приложений
             в AppStore и Google Play
           </p>
-          <a class="button button--green button--category"" href="#">Заказать</a>
+          <a class="button button--green button--category" href="#">Заказать</a>
         </li>
         <li class="category">
-          <img src="img/index/illustration-3.jpg" alt="Картинка презентации" width="300" height="146">
-          <h3 class="category-title">Презентации</h3>
+          <h3 class="category-title presentation-img">Презентации</h3>
           <p class="category-paragraph">
             Вы даже не подазреваете
             насколько вы изумительны!
           </p>
-          <a class="button button--yellow button--category"" href="#">Заказать</a>
+          <a class="button button--yellow button--category" href="#">Заказать</a>
         </li>
       </ul>
     </section>
@@ -131,8 +131,7 @@
       </section>
       <section>
         <h2 class="visually-hidden">Наши приемущества</h2>
-        <img class="image-benefits" src="img/index/nerds-illustration.png" alt="Картинка приемуществ" width="360"
-             height="208">
+        <img class="image-benefits" src="img/index/nerds-illustration.png" alt="Картинка приемуществ" width="360" height="208">
         <h3 class="title-about-us statistics-title">с 2004 года любим точность во всем:</h3>
         <ul class="statistics-group reset-list">
           <li>
@@ -160,12 +159,13 @@
         </ul>
       </section>
     </section>
-    <section>
+    <section class="client-section">
       <h2 class="visually-hidden">Наши клиенты</h2>
+      <span class="client-link-1"></span>
       <ul class="client-group reset-list">
         <li>
           <a class="client-link" href="#">
-            <img src="img/index/htmlacademy.png" alt="Академия" width="199" height="67">
+            <img src="img/index/htmlacademy.png" alt="Академия" width="199" height="68">
           </a>
         </li>
         <li>
@@ -190,21 +190,23 @@
 <footer>
   <section class="map-section">
     <h2 class="visually-hidden">Карта</h2>
-    <sectiogn>
-      <img class="map" alt="Карта" height="460" src="img/footer/map.png" width="1440">
-    </sectiogn>
-    <section class="adress-group">
-      <h3 class="title-adress">Nerds design studio</h3>
-      <address class="text-contact">
-        191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8
-      </address>
-      <p class="text-contact contact-number ">тел.<a class="text-contact contact-number " href="tel:+78122757575"
-                                                     aria-label="Контактный номер телефона">+7 (812) 275-75-75</a></p>
-      <p>
-        <a href="#" class="button button--write-us">Напишите нам</a>
-      </p>
+    <section>
+      <img alt="Карта" src="img/footer/map.png" width="1440" height="416">
     </section>
+    <div class="container">
+      <section class="address-group">
+        <h3 class="title-address">Nerds design studio</h3>
+        <address class="text-contact">
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </address>
+        тел.  <a class="text-contact contact-number" href="tel:+78122757575"
+                 aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
+        <p>
+          <a href="#" class="button button--write-to-us">Напишите нам</a>
+        </p>
+      </section>
+    </div>
   </section>
   <div class="container social-group">
     <section>
@@ -227,20 +229,20 @@
       </ul>
     </section>
     <section>
-      <h2 class="title-footer">Давайте дружить, это выгодно!</h2>
-      <p class="discont">Скидка 10% для друзей из социальных сетей</p>
+      <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+      <p class="footer-discount-paragraph">Скидка 10% для друзей из социальных сетей</p>
     </section>
   </div>
 </footer>
 <section class="form-section">
   <form action="https://echo.htmlacademy.ru" method="post">
     <div class="form-grid">
-      <legend class="form-legend">Напишите нам</legend>
-      <label class="form-grid-name input-label">
+      <h1 class="form-legend">Напишите нам</h1>
+      <label class="input-label">
         Ваше имя
         <input class="input-text" type="text" name="name" placeholder="Имя Фамилия">
       </label>
-      <label class="form-grid-email input-label">
+      <label class="input-label">
         Ваш email:
         <input class="input-text" type="email" name="e-mail" placeholder="email@example.com">
       </label>
@@ -248,7 +250,7 @@
         Текст письма:
         <textarea class="input-text input-textarea" name="letter" placeholder="В свободной форме"></textarea>
       </label>
-      <button class="form-grid-button button button-border--reset" type="submit">Отправить</button>
+      <button class="form-grid-button button" type="submit">Отправить</button>
     </div>
   </form>
 </section>

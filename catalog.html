@@ -12,7 +12,7 @@
   <nav class="header-nav">
     <div class="container">
       <a class="main-header-logo" href="index.html">
-        <img alt="Логотип Нёрдс" height="65" src="img/header/nerds-logo.svg" width="159">
+        <img alt="Логотип Нёрдс" src="img/header/nerds-logo.svg" width="159" height="65">
       </a>
       <ul class="site-navigation reset-list">
         <li>
@@ -28,7 +28,7 @@
           <a class="nav-link" href="#">Контакты</a>
         </li>
       </ul>
-      <div class="custom-navigation">
+      <div class="card-navigation">
         <a class="card-link" href="#">Корзина</a>
       </div>
     </div>
@@ -41,12 +41,11 @@
     </div>
   </div>
   <div class="container">
-    <section>
       <div class="grid-catalog">
-        <h2 class="sorting-subtitle sort">Сортировать</h2>
+        <h2 class="sorting-subtitle sort">Сортировать:</h2>
         <ul class="reset-list sorting-links">
           <li>
-            <a class="sorting-link" href="#">По цене</a>
+            <a class="sorting-link sorting-link--active" href="#">По цене</a>
           </li>
           <li>
             <a class="sorting-link" href="#">По типу</a>
@@ -55,18 +54,18 @@
             <a class="sorting-link" href="#">По названию</a>
           </li>
           <li>
-            <a class="sorting-link descending" href="#">
+            <a class="sorting-link sorting-link--active sorting-link--descending" href="#">
               <img alt="Убывание" height="10" src="img/catalog/icon-down-dir.svg" width="11">
             </a>
-            <a class="sorting-link increase" href="#">
+            <a class="sorting-link sorting-link--increase" href="#">
               <img alt="Возрастание" height="10" src="img/catalog/icon-up-dir.svg" width="11">
             </a>
           </li>
         </ul>
         <section class="grid-section">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="fieldset-border fieldset-cost">
-              <legend class="sorting-subtitle cost">Стоимость</legend>
+            <fieldset class="fieldset-cost fieldset-border--reset ">
+              <legend class="sorting-subtitle cost">Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -85,73 +84,73 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset  class="fieldset-border fieldset-grid">
-              <legend class="sorting-subtitle">Сетка</legend>
+            <fieldset class="fieldset-grid fieldset-border--reset">
+              <legend class="sorting-subtitle">Сетка:</legend>
               <ul class="grid-title reset-list">
                 <li>
                   <label class="radio">
-                  <input checked class="radio-input" name="grid" type="radio" value="Adaptive">
+                    <input checked class="radio-input" name="grid" type="radio" value="Adaptive">
                     <span class="radio-button"></span>
                     Адаптивная
                   </label>
                 </li>
                 <li>
                   <label class="radio">
-                  <input disabled class="radio-input" name="grid" type="radio" value="Fixed">
+                    <input disabled class="radio-input" name="grid" type="radio" value="Fixed">
                     <span class="radio-button"></span>
                     Фиксированная
                   </label>
                 </li>
                 <li>
                   <label class="radio">
-                  <input class="radio-input" name="grid" type="radio" value="Rubber">
+                    <input class="radio-input" name="grid" type="radio" value="Rubber">
                     <span class="radio-button"></span>
                     Резиновая
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset  class="fieldset-border fieldset-features">
-              <legend class="sorting-subtitle">Особенности</legend>
+            <fieldset class="fieldset-features fieldset-border--reset">
+              <legend class="sorting-subtitle">Особенности:</legend>
               <ul class=" features-input-list reset-list">
                 <li>
                   <label class="check option">
-                  <input checked class="check_input"  name="slider" type="checkbox">
+                    <input checked class="check_input" name="slider" type="checkbox">
                     <span class="check-box"></span>
                     Слайдер
                   </label>
                 </li>
                 <li>
                   <label class="check option">
-                  <input class="check_input" name="advantage-block" type="checkbox">
+                    <input class="check_input" name="advantage-block" type="checkbox">
                     <span class="check-box"></span>
-                    Блок приеемуществ
+                    Блок преимуществ
                   </label>
                 </li>
                 <li>
                   <label class="check option">
-                  <input disabled class="check_input" name="news" type="checkbox">
+                    <input disabled class="check_input" name="news" type="checkbox">
                     <span class="check-box"></span>
                     Новости
                   </label>
                 </li>
                 <li>
                   <label class="check option">
-                  <input checked disabled class="check_input" name="gallery" type="checkbox">
+                    <input checked disabled class="check_input" name="gallery" type="checkbox">
                     <span class="check-box"></span>
                     Галерея
                   </label>
                 </li>
                 <li>
                   <label class="check option">
-                  <input class="check_input" name="basket" type="checkbox">
+                    <input class="check_input" name="basket" type="checkbox">
                     <span class="check-box"></span>
                     Корзина
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button button--gray button--gray-show button-border--reset" type="submit">Показать</button>
+            <button class="button button--gray-show button-border--reset" type="submit">Показать</button>
           </form>
         </section>
         <section class="grid-cards">
@@ -159,7 +158,7 @@
           <ul class=" card-catalog reset-list">
             <li>
               <article class="card">
-                <img class="card-img" alt="Сайт Седона за 9900₽" height="580" src="img/catalog/img-sedona.jpg" width="360">
+                <img class="card-img" alt="Сайт Седона за 9900₽" src="img/catalog/img-sedona.jpg" width="360" height="576">
                 <section class="card-info">
                   <a aria-label="Ссылка на покупку сайта Седона за 9900₽" href="#">
                     <h3 class="catalog-subtitle">Sedona</h3>
@@ -168,44 +167,43 @@
                     Информационный сайт
                     для туристов
                   </p>
-                  <p class="button button--cost">9 900 ₽</p>
+                  <a class="button button--cost" href="#">9 900 ₽</a>
                 </section>
               </article>
             </li>
             <li>
               <article class="card">
-                <img class="card-img" alt="Сайт Пинк за 9900₽" height="580" src="img/catalog/img-pink.jpg" width="360">
+                <img class="card-img" alt="Сайт Пинк за 9900₽" src="img/catalog/img-pink.jpg" width="358" height="576">
                 <section class="card-info">
                   <a aria-label="Ссылка на покупку сайта Пинк за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Pink up</h3>
+                    <h3 class="catalog-subtitle">Pink app</h3>
                   </a>
                   <p class="card-paragraph">
                     Продуктовый лендинг
-                    для IOS и Android
+                    приложения для IOS и Android
                   </p>
-                  <p class="button button--cost">9 900 ₽</p>
+                  <a class="button button--cost" href="#">9 900 ₽</a>
                 </section>
               </article>
             </li>
             <li>
               <article class="card">
-                <img class="card-img" alt="Сайт Барбершоп Бородинский за 9900₽" height="580" src="img/catalog/img-barbershop.jpg"
-                     width="360">
+                <img class="card-img" alt="Сайт Барбершоп Бородинский за 9900₽" src="img/catalog/img-barbershop.jpg" width="358" height="578">
                 <section class="card-info">
                   <a aria-label="Ссылка на покупку сайта Бородинский за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Borodinski</h3>
+                    <h3 class="catalog-subtitle">Barbershop</h3>
                   </a>
                   <p class="card-paragraph">
                     Сайт салона красоты.
-                    Для мужчин,да!
+                    Для мужчин,да.
                   </p>
-                  <p class="button button--cost">9 900 ₽</p>
+                  <a class="button button--cost" href="#">9 900 ₽</a>
                 </section>
               </article>
             </li>
             <li>
               <article class="card">
-                <img class="card-img" alt="Сайт Мишка за 9900₽" height="580" src="img/catalog/img-mishka.jpg" width="360">
+                <img class="card-img" alt="Сайт Мишка за 9900₽" src="img/catalog/img-mishka.jpg" width="358" height="578">
                 <section class="card-info">
                   <a aria-label="Ссылка на покупку сайта Мишка за 9900₽" href="#">
                     <h3 class="catalog-subtitle">Mishka</h3>
@@ -214,13 +212,13 @@
                     Интернет-магазин
                     вязаных игрушек
                   </p>
-                  <p class="button button--cost">9 900 ₽</p>
+                  <a class="button button--cost" href="#">9 900 ₽</a>
                 </section>
               </article>
             </li>
             <li>
               <article class="card">
-                <img class="card-img" alt="Сайт А плюс за 9900₽" height="580" src="img/catalog/img-aplus.jpg" width="360">
+                <img class="card-img" alt="Сайт А плюс за 9900₽" src="img/catalog/img-aplus.jpg" width="358" height="578">
                 <section class="card-info">
                   <a aria-label="Ссылка на покупку сайта А плюс за 9900₽" href="#">
                     <h3 class="catalog-subtitle">A plus</h3>
@@ -229,22 +227,22 @@
                     Лендинг курсов повышения
                     квалификации
                   </p>
-                  <p class="button button--cost">9 900 ₽</p>
+                  <a class="button button--cost" href="#">9 900 ₽</a>
                 </section>
               </article>
             </li>
             <li>
               <article class="card">
-                <img class="card-img" alt="Сайт Кваст за 9900₽" height="580" src="img/catalog/img-kvast.jpg" width="360">
+                <img class="card-img" alt="Сайт Кваст за 9900₽" src="img/catalog/img-kvast.jpg" width="358" height="578">
                 <section class="card-info">
                   <a aria-label="Ссылка на покупку сайта Кваст за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Kvast</h3>
+                    <h3 class="catalog-subtitle">Кваст</h3>
                   </a>
                   <p class="card-paragraph">
                     Промо-сайт производителя
                     крафтового кваса
                   </p>
-                  <p class="button button--cost">9 900 ₽</p>
+                  <a class="button button--cost" href="#">9 900 ₽</a>
                 </section>
               </article>
             </li>
@@ -253,38 +251,41 @@
         <h2 class="visually-hidden">Страницы</h2>
         <ul class="pagination reset-list">
           <li>
-            <a class="button button--gray button-pagination button-pagination--active">1</a>
+            <a class="button button-pagination button-pagination--active">1</a>
           </li>
           <li>
-            <a class="button button--gray button-pagination" href="#">2</a>
+            <a class="button button-pagination" href="#">2</a>
           </li>
           <li>
-            <a class="button button--gray button-pagination" href="#">3</a>
+            <a class="button button-pagination" href="#">3</a>
           </li>
           <li>
-            <a class="button button--gray button-pagination button-pagination--next" href="#">Следующая</a>
+            <a class="button button-pagination button-pagination--next" href="#">Следующая</a>
           </li>
         </ul>
       </div>
+  </div>
 </main>
 <footer>
   <section class="map-section">
     <h2 class="visually-hidden">Карта</h2>
-    <sectiogn>
-      <img class="map" alt="Карта" height="460" src="img/footer/map.png" width="1440">
-    </sectiogn>
-    <section class="adress-group">
-      <h3 class="title-adress">Nerds design studio</h3>
-      <address class="text-contact">
-        191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8
-      </address>
-      <p class="text-contact contact-number ">тел.<a class="text-contact contact-number " href="tel:+78122757575"
-                                                     aria-label="Контактный номер телефона">+7 (812) 275-75-75</a></p>
-      <p>
-        <a href="#" class="button button--write-us">Напишите нам</a>
-      </p>
+    <section>
+      <img alt="Карта" src="img/footer/map.png" width="1440" height="416">
     </section>
+    <div class="container">
+      <section class="address-group">
+        <h3 class="title-address">Nerds design studio</h3>
+        <address class="text-contact">
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </address>
+        тел.  <a class="text-contact contact-number " href="tel:+78122757575"
+                 aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
+        <p>
+          <a href="#" class="button button--write-to-us">Напишите нам</a>
+        </p>
+      </section>
+    </div>
   </section>
   <div class="container social-group">
     <section>
@@ -307,15 +308,15 @@
       </ul>
     </section>
     <section>
-      <h2 class="title-footer">Давайте дружить, это выгодно!</h2>
-      <p class="discont">Скидка 10% для друзей из социальных сетей</p>
+      <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+      <p class="footer-discount-paragraph">Скидка 10% для друзей из социальных сетей</p>
     </section>
   </div>
 </footer>
 <section class="form-section">
   <form action="https://echo.htmlacademy.ru" method="post">
     <div class="form-grid">
-      <legend class="form-legend">Напишите нам</legend>
+      <h1 class="form-legend">Напишите нам</h1>
       <label class="form-grid-name input-label">
         Ваше имя
         <input class="input-text" type="text" name="name" placeholder="Имя Фамилия">
@@ -328,7 +329,7 @@
         Текст письма:
         <textarea class="input-text input-textarea" name="letter" placeholder="В свободной форме"></textarea>
       </label>
-      <button class="form-grid-button button button-border--reset" type="submit">Отправить</button>
+      <button class="form-grid-button button" type="submit">Отправить</button>
     </div>
   </form>
 </section>
