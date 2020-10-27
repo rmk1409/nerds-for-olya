@@ -1,4 +1,3 @@
-
 :root {
   --gray: #EEEEEE;
   --gray-hover: #DFDFDF;
@@ -86,7 +85,7 @@ a {
 
 .button {
   display: block;
-  padding: 16px 17px;
+  padding: 16px;
   width: 200px;
   font-size: 16px;
   line-height: 18px;
@@ -239,8 +238,12 @@ a {
   margin-bottom: 39px;
 }
 
-.promo-slider-1 {
+.promo {
   position: relative;
+}
+
+.promo-slider-1 {
+  display: none;
 }
 
 .promo-slider-1::after {
@@ -256,27 +259,50 @@ a {
 }
 
 .promo-slider-2 {
-  background: url("../img/index/nerds-index-slide2.png") no-repeat;
-}
-
-.promo-slider-3 {
-  background: url("../img/index/nerds-index-slide3.png") no-repeat;
-}
-
-.promo-slider-2,
-.promo-slider-3 {
   display: none;
+}
+
+.promo-slider-2::after {
+  position: absolute;
+  top: -78px;
+  left: 398px;
+  content: "";
+  width: 891px;
+  height: 431px;
+  background-image: url("../img/index/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-slider-3 {
+
+}
+
+.promo-slider-3::after {
+  position: absolute;
+  top: -78px;
+  left: 398px;
+  content: "";
+  width: 891px;
+  height: 431px;
+  background-image: url("../img/index/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .button--learn-more {
   width: 241px;
 }
 
+.section-category {
+  margin-top: 80px;
+  padding-bottom: 73px;
+}
+
 .category-block {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 100px;
-  margin-top: 82px;
 }
 
 .category {
@@ -325,7 +351,7 @@ a {
   display: grid;
   grid-template-columns: 652px 360px;
   column-gap: 142px;
-  margin-top: 143px;
+  margin-top: 71px;
 }
 
 .container .info-about-us {
@@ -347,37 +373,36 @@ a {
 }
 
 .client-section {
-  position: relative;
+  margin-top: 58px;
+  border-bottom: 2px solid var(--gray);
+  border-top: 2px solid var(--gray);
 }
 
-.client-link-1::before {
+.client-link--htmlacademy::after,
+.client-link--borodinski::after,
+.client-link--pink::after {
   content: "";
   position: absolute;
+  top: 63px;
+  height: 52px;
+  width: 2px;
+  background-color: var(--gray)
+}
+
+.client-link--htmlacademy::after {
   left: 279px;
-  top: 63px;
-  height: 52px;
-  width: 2px;
-  background-color: var(--gray)
 }
 
-.client-group::before {
-  content: "";
-  position: absolute;
+.client-link--borodinski::after {
   left: 579px;
-  top: 63px;
-  height: 52px;
-  width: 2px;
-  background-color: var(--gray)
 }
 
-.client-group::after {
-  content: "";
-  position: absolute;
+.client-link--pink::after {
   left: 879px;
-  top: 63px;
-  height: 52px;
-  width: 2px;
-  background-color: var(--gray)
+}
+
+.map-img {
+
 }
 
 .statistics-group {
@@ -391,14 +416,11 @@ a {
 }
 
 .client-group {
-  border-bottom: 2px solid var(--gray);
-  border-top: 2px solid var(--gray);
-  height: 184px;
+  position: relative;
   display: flex;
-  padding-top: 15px;
+  padding: 41px 0;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 58px;
   align-items: center;
 }
 
@@ -415,7 +437,7 @@ a {
   position: absolute;
   left: 140px;
   bottom: 64px;
-  padding: 23px 32px 31px 50px;
+  padding: 50px 32px 44px 50px;
   background-color: var(--white);
 }
 
@@ -436,11 +458,10 @@ a {
 
 .grid-catalog {
   display: grid;
-  align-content: center;
   grid-template-columns: auto 360px 360px;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: repeat(3,auto);
   column-gap: 40px;
-  margin-bottom: 36px;
+  margin-bottom: -19px;
 }
 
 .form-section {
@@ -456,16 +477,14 @@ a {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.sort {
+.sorting-subtitle--sort {
   grid-column-start: 2;
-  grid-row-start: 1;
 }
 
 
 .sorting-links {
   padding-top: 6px;
   grid-column-start: 3;
-  grid-row-start: 1;
   display: flex;
   align-items: center;
   gap: 26px;
@@ -481,9 +500,7 @@ a {
 
 .grid-section {
   grid-row: 1/-1;
-  align-items: flex-start;
   padding-top: 15px;
-  border: none;
 }
 
 .fieldset-border--reset {
@@ -493,7 +510,7 @@ a {
 }
 
 .grid-cards {
-  margin-top: 45px;
+  margin-top: 33px;
   grid-column: 2/-1;
   grid-row-start: 2;
 }
@@ -580,7 +597,7 @@ a {
   margin-top: -7px;
 }
 
-.statistics-title {
+.title-about-us--statistic {
   margin-top: 14px;
   margin-left: 22px;
 }
@@ -594,7 +611,6 @@ a {
 }
 
 .percent {
-  font-weight: bold;
   font-size: 26px;
   line-height: 40px;
 }
@@ -607,7 +623,7 @@ a {
 }
 
 .text-contact {
-  margin-top: 23px;
+  margin-top: 20px;
   max-width: 214px;
   font-size: 16px;
   line-height: 18px;
@@ -617,7 +633,7 @@ a {
 }
 
 .title-address {
-  margin-top: 26px;
+  margin:0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -631,7 +647,6 @@ a {
 .button--write-to-us {
   margin-top: 37px;
   width: 219px;
-  text-align: center;
 }
 
 .footer-title {
@@ -980,6 +995,8 @@ a {
 .button-pagination:active {
   color: var(--black);
   background-color: var(--gray-hover);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  border: 0 solid var(--gray);
 }
 
 .button--gray-show:active {
@@ -988,15 +1005,9 @@ a {
 }
 
 .button-pagination {
-  min-height: 50px;
   width: 50px;
   color: var(--black);
   background-color: var(--gray);
-}
-
-.button-pagination:active {
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  border: 0 solid var(--gray);
 }
 
 .button--gray-show:active {
@@ -1005,26 +1016,30 @@ a {
 }
 
 .button-pagination:hover {
-  padding-top: 17px;
   border: 0 solid var(--gray);
 }
 
 .button-pagination--active {
-  padding: 13px 17px;
+  padding: 13px 0;
+  min-height: 50px;
   background-color: var(--white);
-  border: 3px solid var(--gray)
+  border: 2px solid var(--gray);
 }
 
 .button-pagination--active:active {
+  padding: 15px 0;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   border: 0 solid var(--gray);
+}
+
+.button-pagination--active:hover {
+  padding: 15px 0;
 }
 
 .button-pagination--next {
   width: 260px;
 }
 
-/* Radio */
 .radio {
   position: relative;
   padding-left: 13px;
@@ -1059,7 +1074,9 @@ a {
   opacity: 0.1;
 }
 
-/* Check */
+.radio input:focus + .radio-button {
+  outline: 3px solid var(--coral);
+}
 
 .check {
   position: relative;
@@ -1080,6 +1097,10 @@ a {
   background-image: url("../img/catalog/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
+}
+
+.check_input:focus + .check-box {
+  outline: 3px solid var(--coral);
 }
 
 .check input:checked + .check-box {
@@ -1110,7 +1131,7 @@ a {
 .social-link {
   width: 81px;
   height: 81px;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--gray);

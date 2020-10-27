@@ -41,229 +41,231 @@
     </div>
   </div>
   <div class="container">
-      <div class="grid-catalog">
-        <h2 class="sorting-subtitle sort">Сортировать:</h2>
-        <ul class="reset-list sorting-links">
-          <li>
-            <a class="sorting-link sorting-link--active" href="#">По цене</a>
-          </li>
-          <li>
-            <a class="sorting-link" href="#">По типу</a>
-          </li>
-          <li>
-            <a class="sorting-link" href="#">По названию</a>
-          </li>
-          <li>
-            <a class="sorting-link sorting-link--active sorting-link--descending" href="#">
-              <img alt="Убывание" height="10" src="img/catalog/icon-down-dir.svg" width="11">
-            </a>
-            <a class="sorting-link sorting-link--increase" href="#">
-              <img alt="Возрастание" height="10" src="img/catalog/icon-up-dir.svg" width="11">
-            </a>
-          </li>
-        </ul>
-        <section class="grid-section">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="fieldset-cost fieldset-border--reset ">
-              <legend class="sorting-subtitle cost">Стоимость:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+    <div class="grid-catalog">
+      <h2 class="sorting-subtitle sorting-subtitle--sort">Сортировать:</h2>
+      <ul class="sorting-links reset-list">
+        <li>
+          <a class="sorting-link sorting-link--active" href="#">По цене</a>
+        </li>
+        <li>
+          <a class="sorting-link" href="#">По типу</a>
+        </li>
+        <li>
+          <a class="sorting-link" href="#">По названию</a>
+        </li>
+        <li>
+          <a class="sorting-link sorting-link--active sorting-link--descending" href="#">
+            <img alt="Убывание" height="10" src="img/catalog/icon-down-dir.svg" width="11">
+          </a>
+          <a class="sorting-link sorting-link--increase" href="#">
+            <img alt="Возрастание" height="10" src="img/catalog/icon-up-dir.svg" width="11">
+          </a>
+        </li>
+      </ul>
+      <section class="grid-section">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="fieldset-cost fieldset-border--reset ">
+            <legend class="sorting-subtitle cost">Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">
-                    до <input type="number" name="max-price" value="15000">
-                  </label>
-                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
               </div>
-            </fieldset>
-            <fieldset class="fieldset-grid fieldset-border--reset">
-              <legend class="sorting-subtitle">Сетка:</legend>
-              <ul class="grid-title reset-list">
-                <li>
-                  <label class="radio">
-                    <input checked class="radio-input" name="grid" type="radio" value="Adaptive">
-                    <span class="radio-button"></span>
-                    Адаптивная
-                  </label>
-                </li>
-                <li>
-                  <label class="radio">
-                    <input disabled class="radio-input" name="grid" type="radio" value="Fixed">
-                    <span class="radio-button"></span>
-                    Фиксированная
-                  </label>
-                </li>
-                <li>
-                  <label class="radio">
-                    <input class="radio-input" name="grid" type="radio" value="Rubber">
-                    <span class="radio-button"></span>
-                    Резиновая
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="fieldset-features fieldset-border--reset">
-              <legend class="sorting-subtitle">Особенности:</legend>
-              <ul class=" features-input-list reset-list">
-                <li>
-                  <label class="check option">
-                    <input checked class="check_input" name="slider" type="checkbox">
-                    <span class="check-box"></span>
-                    Слайдер
-                  </label>
-                </li>
-                <li>
-                  <label class="check option">
-                    <input class="check_input" name="advantage-block" type="checkbox">
-                    <span class="check-box"></span>
-                    Блок преимуществ
-                  </label>
-                </li>
-                <li>
-                  <label class="check option">
-                    <input disabled class="check_input" name="news" type="checkbox">
-                    <span class="check-box"></span>
-                    Новости
-                  </label>
-                </li>
-                <li>
-                  <label class="check option">
-                    <input checked disabled class="check_input" name="gallery" type="checkbox">
-                    <span class="check-box"></span>
-                    Галерея
-                  </label>
-                </li>
-                <li>
-                  <label class="check option">
-                    <input class="check_input" name="basket" type="checkbox">
-                    <span class="check-box"></span>
-                    Корзина
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button button--gray-show button-border--reset" type="submit">Показать</button>
-          </form>
-        </section>
-        <section class="grid-cards">
-          <h2 class="visually-hidden">Карточки товаров</h2>
-          <ul class=" card-catalog reset-list">
-            <li>
-              <article class="card">
-                <img class="card-img" alt="Сайт Седона за 9900₽" src="img/catalog/img-sedona.jpg" width="360" height="576">
-                <section class="card-info">
-                  <a aria-label="Ссылка на покупку сайта Седона за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Sedona</h3>
-                  </a>
-                  <p class="card-paragraph">
-                    Информационный сайт
-                    для туристов
-                  </p>
-                  <a class="button button--cost" href="#">9 900 ₽</a>
-                </section>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <img class="card-img" alt="Сайт Пинк за 9900₽" src="img/catalog/img-pink.jpg" width="358" height="576">
-                <section class="card-info">
-                  <a aria-label="Ссылка на покупку сайта Пинк за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Pink app</h3>
-                  </a>
-                  <p class="card-paragraph">
-                    Продуктовый лендинг
-                    приложения для IOS и Android
-                  </p>
-                  <a class="button button--cost" href="#">9 900 ₽</a>
-                </section>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <img class="card-img" alt="Сайт Барбершоп Бородинский за 9900₽" src="img/catalog/img-barbershop.jpg" width="358" height="578">
-                <section class="card-info">
-                  <a aria-label="Ссылка на покупку сайта Бородинский за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Barbershop</h3>
-                  </a>
-                  <p class="card-paragraph">
-                    Сайт салона красоты.
-                    Для мужчин,да.
-                  </p>
-                  <a class="button button--cost" href="#">9 900 ₽</a>
-                </section>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <img class="card-img" alt="Сайт Мишка за 9900₽" src="img/catalog/img-mishka.jpg" width="358" height="578">
-                <section class="card-info">
-                  <a aria-label="Ссылка на покупку сайта Мишка за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Mishka</h3>
-                  </a>
-                  <p class="card-paragraph">
-                    Интернет-магазин
-                    вязаных игрушек
-                  </p>
-                  <a class="button button--cost" href="#">9 900 ₽</a>
-                </section>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <img class="card-img" alt="Сайт А плюс за 9900₽" src="img/catalog/img-aplus.jpg" width="358" height="578">
-                <section class="card-info">
-                  <a aria-label="Ссылка на покупку сайта А плюс за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">A plus</h3>
-                  </a>
-                  <p class="card-paragraph">
-                    Лендинг курсов повышения
-                    квалификации
-                  </p>
-                  <a class="button button--cost" href="#">9 900 ₽</a>
-                </section>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <img class="card-img" alt="Сайт Кваст за 9900₽" src="img/catalog/img-kvast.jpg" width="358" height="578">
-                <section class="card-info">
-                  <a aria-label="Ссылка на покупку сайта Кваст за 9900₽" href="#">
-                    <h3 class="catalog-subtitle">Кваст</h3>
-                  </a>
-                  <p class="card-paragraph">
-                    Промо-сайт производителя
-                    крафтового кваса
-                  </p>
-                  <a class="button button--cost" href="#">9 900 ₽</a>
-                </section>
-              </article>
-            </li>
-          </ul>
-        </section>
-        <h2 class="visually-hidden">Страницы</h2>
-        <ul class="pagination reset-list">
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0" min="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000" max="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset-grid fieldset-border--reset">
+            <legend class="sorting-subtitle">Сетка:</legend>
+            <ul class="grid-title reset-list">
+              <li>
+                <label class="radio">
+                  <input class="radio-input" name="grid" type="radio" value="Adaptive" checked>
+                  <span class="radio-button"></span>
+                  Адаптивная
+                </label>
+              </li>
+              <li>
+                <label class="radio">
+                  <input class="radio-input" name="grid" type="radio" value="Fixed">
+                  <span class="radio-button"></span>
+                  Фиксированная
+                </label>
+              </li>
+              <li>
+                <label class="radio">
+                  <input class="radio-input" name="grid" type="radio" value="Rubber">
+                  <span class="radio-button"></span>
+                  Резиновая
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset-features fieldset-border--reset">
+            <legend class="sorting-subtitle">Особенности:</legend>
+            <ul class=" features-input-list reset-list">
+              <li>
+                <label class="check option">
+                  <input class="check_input" name="slider" type="checkbox" checked>
+                  <span class="check-box"></span>
+                  Слайдер
+                </label>
+              </li>
+              <li>
+                <label class="check option">
+                  <input class="check_input" name="advantage-block" type="checkbox">
+                  <span class="check-box"></span>
+                  Блок преимуществ
+                </label>
+              </li>
+              <li>
+                <label class="check option">
+                  <input class="check_input" name="news" type="checkbox">
+                  <span class="check-box"></span>
+                  Новости
+                </label>
+              </li>
+              <li>
+                <label class="check option">
+                  <input class="check_input" name="gallery" type="checkbox">
+                  <span class="check-box"></span>
+                  Галерея
+                </label>
+              </li>
+              <li>
+                <label class="check option">
+                  <input class="check_input" name="basket" type="checkbox">
+                  <span class="check-box"></span>
+                  Корзина
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button button--gray-show button-border--reset" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="grid-cards">
+        <h2 class="visually-hidden">Карточки товаров</h2>
+        <ul class=" card-catalog reset-list">
           <li>
-            <a class="button button-pagination button-pagination--active">1</a>
+            <article class="card">
+              <img class="card-img" alt="Сайт Седона за 9900₽" src="img/catalog/img-sedona.jpg" width="360"
+                   height="576">
+              <section class="card-info">
+                <a aria-label="Ссылка на покупку сайта Седона за 9900₽" href="#">
+                  <h3 class="catalog-subtitle">Sedona</h3>
+                </a>
+                <p class="card-paragraph">
+                  Информационный сайт <br>
+                  для туристов
+                </p>
+                <a class="button button--cost" href="#">9 900 ₽</a>
+              </section>
+            </article>
           </li>
           <li>
-            <a class="button button-pagination" href="#">2</a>
+            <article class="card">
+              <img class="card-img" alt="Сайт Пинк за 9900₽" src="img/catalog/img-pink.jpg" width="358" height="576">
+              <section class="card-info">
+                <a aria-label="Ссылка на покупку сайта Пинк за 9900₽" href="#">
+                  <h3 class="catalog-subtitle">Pink app</h3>
+                </a>
+                <p class="card-paragraph">
+                  Продуктовый лендинг
+                  приложения для IOS и Android
+                </p>
+                <a class="button button--cost" href="#">9 900 ₽</a>
+              </section>
+            </article>
           </li>
           <li>
-            <a class="button button-pagination" href="#">3</a>
+            <article class="card">
+              <img class="card-img" alt="Сайт Барбершоп Бородинский за 9900₽" src="img/catalog/img-barbershop.jpg"
+                   width="358" height="578">
+              <section class="card-info">
+                <a aria-label="Ссылка на покупку сайта Бородинский за 9900₽" href="#">
+                  <h3 class="catalog-subtitle">Barbershop</h3>
+                </a>
+                <p class="card-paragraph">
+                  Сайт салона красоты.<br>
+                  Для мужчин,да.
+                </p>
+                <a class="button button--cost" href="#">9 900 ₽</a>
+              </section>
+            </article>
           </li>
           <li>
-            <a class="button button-pagination button-pagination--next" href="#">Следующая</a>
+            <article class="card">
+              <img class="card-img" alt="Сайт Мишка за 9900₽" src="img/catalog/img-mishka.jpg" width="358" height="578">
+              <section class="card-info">
+                <a aria-label="Ссылка на покупку сайта Мишка за 9900₽" href="#">
+                  <h3 class="catalog-subtitle">Mishka</h3>
+                </a>
+                <p class="card-paragraph">
+                  Интернет-магазин <br>
+                  вязаных игрушек
+                </p>
+                <a class="button button--cost" href="#">9 900 ₽</a>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-img" alt="Сайт А плюс за 9900₽" src="img/catalog/img-aplus.jpg" width="358" height="578">
+              <section class="card-info">
+                <a aria-label="Ссылка на покупку сайта А плюс за 9900₽" href="#">
+                  <h3 class="catalog-subtitle">A plus</h3>
+                </a>
+                <p class="card-paragraph">
+                  Лендинг курсов повышения
+                  квалификации
+                </p>
+                <a class="button button--cost" href="#">9 900 ₽</a>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <img class="card-img" alt="Сайт Кваст за 9900₽" src="img/catalog/img-kvast.jpg" width="358" height="578">
+              <section class="card-info">
+                <a aria-label="Ссылка на покупку сайта Кваст за 9900₽" href="#">
+                  <h3 class="catalog-subtitle">Кваст</h3>
+                </a>
+                <p class="card-paragraph">
+                  Промо-сайт производителя
+                  крафтового кваса
+                </p>
+                <a class="button button--cost" href="#">9 900 ₽</a>
+              </section>
+            </article>
           </li>
         </ul>
-      </div>
+      </section>
+      <h2 class="visually-hidden">Страницы</h2>
+      <ul class="pagination reset-list">
+        <li>
+          <a class="button button-pagination button-pagination--active">1</a>
+        </li>
+        <li>
+          <a class="button button-pagination" href="#">2</a>
+        </li>
+        <li>
+          <a class="button button-pagination" href="#">3</a>
+        </li>
+        <li>
+          <a class="button button-pagination button-pagination--next" href="#">Следующая</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </main>
 <footer>
@@ -279,17 +281,18 @@
           191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8
         </address>
-        тел.  <a class="text-contact contact-number " href="tel:+78122757575"
-                 aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
-        <p>
-          <a href="#" class="button button--write-to-us">Напишите нам</a>
+        <p class="text-contact">
+          тел.
+          <a class="text-contact contact-number" href="tel:+78122757575"
+             aria-label="Контактный номер телефона">+7 (812) 275-75-75</a>
         </p>
+        <a href="#" class="button button--write-to-us">Напишите нам</a>
       </section>
     </div>
   </section>
   <div class="container social-group">
     <section>
-      <ul class=" social-links-group reset-list">
+      <ul class="social-links-group reset-list">
         <li>
           <a class="social-link" href="#">
             <img class="social-img" src="img/footer/vk-icon.svg" alt="Вконтакте" width="26" height="15"/>
@@ -317,11 +320,11 @@
   <form action="https://echo.htmlacademy.ru" method="post">
     <div class="form-grid">
       <h1 class="form-legend">Напишите нам</h1>
-      <label class="form-grid-name input-label">
+      <label class="input-label">
         Ваше имя
         <input class="input-text" type="text" name="name" placeholder="Имя Фамилия">
       </label>
-      <label class="form-grid-email input-label">
+      <label class="input-label">
         Ваш email:
         <input class="input-text" type="email" name="e-mail" placeholder="email@example.com">
       </label>
