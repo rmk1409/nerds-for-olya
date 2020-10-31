@@ -156,12 +156,13 @@ a {
   border: none;
 }
 
-.slider-button--active {
+.slider-button {
   position: relative;
 }
 
-.slider-button--active:before {
+.slider-button:before {
   content: "";
+  display: none;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -170,6 +171,10 @@ a {
   background-color: transparent;
   border: 2px solid var(--gray-active);
   border-radius: 50%;
+}
+
+.slider-button--active:before {
+  display: block;
 }
 
 .site-navigation {
@@ -261,6 +266,7 @@ a {
   display: none;
 }
 
+
 .promo-slider-2::after {
   position: absolute;
   top: -78px;
@@ -274,7 +280,7 @@ a {
 }
 
 .promo-slider-3 {
-
+display: none;
 }
 
 .promo-slider-3::after {
@@ -287,6 +293,10 @@ a {
   background-image: url("../img/index/nerds-index-slide3.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.promo-slider--active {
+  display: block;
 }
 
 .button--learn-more {
@@ -523,7 +533,6 @@ a {
   background-image: url("../img/footer/close-cross.svg");
   opacity: 0.3;
   outline: none;
-  border: none;
 }
 
 .button-modal-close:hover {
