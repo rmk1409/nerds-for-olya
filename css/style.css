@@ -1260,7 +1260,7 @@ a {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-51%, -50%);
   }
 
   10%,
@@ -1268,13 +1268,13 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-50%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate( -49%, -50%);
   }
 }
