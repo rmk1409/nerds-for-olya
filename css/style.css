@@ -242,12 +242,11 @@ a {
   margin-bottom: 39px;
 }
 
-.promo {
-  position: relative;
-}
-
-.promo-slider-1 {
+.promo-slider-1,
+.promo-slider-2,
+.promo-slider-3 {
   display: none;
+  position: relative;
 }
 
 .promo-slider-1::after {
@@ -260,10 +259,6 @@ a {
   background-image: url("../img/index/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.promo-slider-2 {
-  display: none;
 }
 
 
@@ -279,9 +274,6 @@ a {
   background-position: 0 0;
 }
 
-.promo-slider-3 {
-display: none;
-}
 
 .promo-slider-3::after {
   position: absolute;
@@ -1269,7 +1261,7 @@ display: none;
 @keyframes shake {
   0%,
   100% {
-    transform: translate(-51%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -1277,7 +1269,7 @@ display: none;
   50%,
   70%,
   90% {
-    transform: translate(-50%, -50%);
+    transform: translate(-51%, -50%);
   }
 
   20%,
