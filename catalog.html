@@ -5,7 +5,7 @@
   <title>Каталог "Nerd's" Магазин готовых шаблонов</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/min_style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <header>
@@ -63,6 +63,7 @@
         </li>
       </ul>
       <section class="grid-section">
+        <h2 class="visually-hidden">Группа формы</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="fieldset-cost fieldset-border--reset ">
             <legend class="sorting-subtitle cost">Стоимость:</legend>
@@ -71,8 +72,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="toggle toggle-min" aria-label="Минимальное значение цены" tabindex="0"></div>
+                <div class="toggle toggle-max" aria-label="Максимальное значение цены" tabindex="0"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
@@ -158,6 +159,7 @@
         <ul class="card-catalog reset-list">
           <li>
             <article class="card">
+              <h3 class="visually-hidden">Карточка Седона</h3>
               <img class="card-img" alt="Сайт Седона за 9900₽" src="img/catalog/img-sedona.jpg" width="360"
                    height="576">
               <section class="card-info">
@@ -174,6 +176,7 @@
           </li>
           <li>
             <article class="card">
+              <h3 class="visually-hidden">Карточка Пинк</h3>
               <img class="card-img" alt="Сайт Пинк за 9900₽" src="img/catalog/img-pink.jpg" width="358" height="576">
               <section class="card-info">
                 <a aria-label="Ссылка на покупку сайта Пинк за 9900₽" href="#">
@@ -189,6 +192,7 @@
           </li>
           <li>
             <article class="card">
+              <h3 class="visually-hidden">Карточка Бородинский</h3>
               <img class="card-img" alt="Сайт Барбершоп Бородинский за 9900₽" src="img/catalog/img-barbershop.jpg"
                    width="358" height="578">
               <section class="card-info">
@@ -205,6 +209,7 @@
           </li>
           <li>
             <article class="card">
+              <h3 class="visually-hidden">Карточка Мишка</h3>
               <img class="card-img" alt="Сайт Мишка за 9900₽" src="img/catalog/img-mishka.jpg" width="358" height="578">
               <section class="card-info">
                 <a aria-label="Ссылка на покупку сайта Мишка за 9900₽" href="#">
@@ -220,6 +225,7 @@
           </li>
           <li>
             <article class="card">
+              <h3 class="visually-hidden">Карточка А плюс</h3>
               <img class="card-img" alt="Сайт А плюс за 9900₽" src="img/catalog/img-aplus.jpg" width="358" height="578">
               <section class="card-info">
                 <a aria-label="Ссылка на покупку сайта А плюс за 9900₽" href="#">
@@ -235,6 +241,7 @@
           </li>
           <li>
             <article class="card">
+              <h3 class="visually-hidden">Карточка Кваст</h3>
               <img class="card-img" alt="Сайт Кваст за 9900₽" src="img/catalog/img-kvast.jpg" width="358" height="578">
               <section class="card-info">
                 <a aria-label="Ссылка на покупку сайта Кваст за 9900₽" href="#">
@@ -271,10 +278,9 @@
 <footer>
   <section class="map-section">
     <h2 class="visually-hidden">Карта</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-      height="416" allowfullscreen
-      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <iframe class="iframe-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            aria-label="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" allowfullscreen tabindex="0"></iframe>
     <div class="container">
       <section class="address-group">
         <h3 class="title-address">Nerds design studio</h3>
@@ -293,6 +299,7 @@
   </section>
   <div class="container social-group">
     <section>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-links-group reset-list">
         <li>
           <a class="social-link" href="#">
@@ -320,7 +327,7 @@
 <section class="form-section">
   <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="form-grid">
-      <h1 class="form-legend">Напишите нам</h1>
+      <h2 class="form-legend">Напишите нам</h2>
       <label class="input-label">
         Ваше имя
         <input class="input-text input-text--name" type="text" name="name" placeholder="Имя Фамилия" minlength="1">
@@ -339,6 +346,6 @@
   </form>
   <button class="button-modal-close" type="button" aria-label="Закрыть"></button>
 </section>
-<script src="js/min_script.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>
