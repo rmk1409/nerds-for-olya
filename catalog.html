@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Каталог "Nerd's" Магазин готовых шаблонов</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/norm.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <header>
@@ -130,7 +130,7 @@
               </li>
               <li>
                 <label class="check option">
-                  <input class="check_input" name="news" type="checkbox">
+                  <input class="check_input" name="news" type="checkbox" checked>
                   <span class="check-box"></span>
                   Новости
                 </label>
@@ -138,20 +138,20 @@
               <li>
                 <label class="check option">
                   <input class="check_input" name="gallery" type="checkbox">
-                  <span class="check-box"></span>
+                  <span class="check-box" tabindex="0"></span>
                   Галерея
                 </label>
               </li>
               <li>
                 <label class="check option">
                   <input class="check_input" name="basket" type="checkbox">
-                  <span class="check-box"></span>
+                  <span class="check-box" tabindex="0"></span>
                   Корзина
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="button button--gray-show button-border--reset" type="submit">Показать</button>
+          <button class="button button--gray-show button-border--reset" type="submit" aria-label="Кнопка показать">Показать</button>
         </form>
       </section>
       <section class="grid-cards">
@@ -170,7 +170,7 @@
                   Информационный сайт <br>
                   для туристов
                 </p>
-                <a class="button button--cost" href="#">9 900 ₽</a>
+                <a class="button button--cost" href="#" aria-label="Стоимость сайта">9 900 ₽</a>
               </section>
             </article>
           </li>
@@ -186,7 +186,7 @@
                   Продуктовый лендинг
                   приложения для IOS и Android
                 </p>
-                <a class="button button--cost" href="#">9 900 ₽</a>
+                <a class="button button--cost" href="#" aria-label="Стоимость сайта">9 900 ₽</a>
               </section>
             </article>
           </li>
@@ -203,7 +203,7 @@
                   Сайт салона красоты.<br>
                   Для мужчин,да.
                 </p>
-                <a class="button button--cost" href="#">9 900 ₽</a>
+                <a class="button button--cost" href="#" aria-label="Стоимость сайта">9 900 ₽</a>
               </section>
             </article>
           </li>
@@ -219,7 +219,7 @@
                   Интернет-магазин <br>
                   вязаных игрушек
                 </p>
-                <a class="button button--cost" href="#">9 900 ₽</a>
+                <a class="button button--cost" href="#" aria-label="Стоимость сайта">9 900 ₽</a>
               </section>
             </article>
           </li>
@@ -235,7 +235,7 @@
                   Лендинг курсов повышения
                   квалификации
                 </p>
-                <a class="button button--cost" href="#">9 900 ₽</a>
+                <a class="button button--cost" href="#" aria-label="Стоимость сайта">9 900 ₽</a>
               </section>
             </article>
           </li>
@@ -251,7 +251,7 @@
                   Промо-сайт производителя
                   крафтового кваса
                 </p>
-                <a class="button button--cost" href="#">9 900 ₽</a>
+                <a class="button button--cost" href="#" aria-label="Стоимость сайта">9 900 ₽</a>
               </section>
             </article>
           </li>
@@ -260,16 +260,16 @@
       <h2 class="visually-hidden">Страницы</h2>
       <ul class="pagination reset-list">
         <li>
-          <a class="button button-pagination button-pagination--active">1</a>
+          <a class="button button-pagination button-pagination--active" aria-label="Страница первая">1</a>
         </li>
         <li>
-          <a class="button button-pagination" href="#">2</a>
+          <a class="button button-pagination" href="#" aria-label="Страница вторая">2</a>
         </li>
         <li>
-          <a class="button button-pagination" href="#">3</a>
+          <a class="button button-pagination" href="#" aria-label="Страница третья">3</a>
         </li>
         <li>
-          <a class="button button-pagination button-pagination--next" href="#">Следующая</a>
+          <a class="button button-pagination button-pagination--next" href="#" aria-label="Страница следующая">Следующая</a>
         </li>
       </ul>
     </div>
@@ -346,6 +346,6 @@
   </form>
   <button class="button-modal-close" type="button" aria-label="Закрыть"></button>
 </section>
-<script src="js/form.js"></script>
+<script src="js/form.min.js"></script>
 </body>
 </html>
