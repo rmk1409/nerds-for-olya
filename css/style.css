@@ -124,6 +124,7 @@ a {
   background-color: var(--coral);
   border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -1018,7 +1019,7 @@ a {
 .card-info {
   display: none;
   position: absolute;
-  left: -1px;
+  left: 0;
   bottom: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1028,12 +1029,18 @@ a {
   -ms-flex-align: center;
   align-items: center;
   padding: 28px 57px 44px 57px;
-  width: 360px;
+  width: 358px;
   background-color: var(--gray);
   border-radius: 3px;
 }
 
 .card:hover .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card:focus-within .card-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
